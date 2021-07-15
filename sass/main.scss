@@ -1,0 +1,19 @@
+// custom variables.scss has to be above import if redefined
+$primary: #c29938;
+$light: #fbf5e5;
+
+//import functions & variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192,
+  "altstar": #c29938
+
+);
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
